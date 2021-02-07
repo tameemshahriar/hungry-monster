@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <title>Hungry Monster</title>
+</head>
+
+<body>
+  <!--Navigation Menu Section-->
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a href="#" class="navbar-brand pl-5 ml-5">
+        <img src="images/logo.png" height="60" alt="Hungry Monster">
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+
+        </div>
+        <div class="navbar-nav ml-auto pr-5 pl-5">
+          <a href="#" class="nav-item nav-link active">Home</a>
+          <a href="#" class="nav-item nav-link">About</a>
+          <a href="#" class="nav-item nav-link">Recipes</a>
+          <a href="#" class="nav-item nav-link">Blogs</a>
+        </div>
+      </div>
+    </nav>
+
+
+    <!--Main Section-->
+    <div class="flex" id="top-margin">
+      <form class="flex" id="submit">
+        <input type="text" id="search" placeholder="Search for Meal...">
+        <button class="search-btn" type="submit">Search</button>
+      </form>
+    </div>
+    <div id="show-result"></div>
+    <div id="meals" class="meals"></div>
+    <div id="single-meal"></div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
